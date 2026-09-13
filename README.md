@@ -2,47 +2,67 @@
 
 
 
-# [Project Name] 🎯
+# JEEVIFY 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: GLITCH
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: ABHIJITH B - NSS COLLEGE OF ENGINEERING, PALAKKAD
+- Member 2: AKSHAYA K S - NSS COLLEGE OF ENGINEERING, PALAKKAD
 
 ### Project Description
-[2-3 lines about what your project does]
+Jeevify gives the things around us a life of their own! Upload any object and watch it get a funny personality, a LinkedIn profile, a Matrimony profile, and even an astrology reading to find its perfect match.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Everyday objects are living completely meaningless lives without an identity, career, love life, or knowledge of their destiny. A lonely chair has no idea who its soulmate is, a pen is working without a LinkedIn profile, and a bottle has never checked its horoscope.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+We solve this extremely unnecessary problem with AI. Just upload an object, and Jeevify identifies it, gives it a funny human identity, creates its LinkedIn profile and Matrimony profile, and even checks its astrology and compatibility with other objects. Basically, we give things the complicated life they never asked for
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+1. Language Used
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- TypeScript
+- JavaScript
+- HTML5
+- CSS
+
+2. Framework Used
+
+- React.js
+- Vite
+
+3. Libraries Used
+
+- Tailwind CSS – UI styling and responsive design
+- Framer Motion – animations and page transitions
+- Lucide React – icons
+- Google Gemini API – AI-powered object recognition and content generation
+- LocalStorage – storing generated object identities and user data
+
+4. Tools Used
+
+- Antigravity – AI-assisted development and website building
+- GitHub – version control and project hosting
+- Gemini AI – object identification, personality generation, funny descriptions, career, matrimony and astrology content
+- Render – web deployment/hosting
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+Installation Command
+npm install
+This installs all the required dependencies listed in the project's "package.json".
 
 # Run
-[commands]
+npm run dev
+
+This starts the development server and allows the Jeevify website to be accessed locally in the browser.
 
 ### Project Documentation
 For Software:
