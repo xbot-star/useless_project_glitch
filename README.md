@@ -68,14 +68,15 @@ This starts the development server and allows the Jeevify website to be accessed
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+https://github.com/xbot-star/useless_project_glitch/edit/main/README.md
+https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot2.png
+https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot3.png
+https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot4.png
+https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot5.png
+https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot6.png
+https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot7.png
+https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot8.png
+https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot9.png
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
