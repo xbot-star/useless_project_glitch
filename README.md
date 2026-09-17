@@ -102,7 +102,7 @@ flowchart TD
 
 ### Project Demo
 # Video
-[![Watch the video](https://github.com/user-attachments/assets/6b722baf-dcdd-4613-b0a4-6d7cd0c844f4")](https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link)
+[![Watch the video](DEMO/509bbcf0-5c20-4c52-9908-e67c12fcabd8.jpg)](https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link)
 *Click the image above to view the full video demonstration on Google Drive.*
 
 
