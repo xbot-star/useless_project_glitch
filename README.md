@@ -68,15 +68,32 @@ This starts the development server and allows the Jeevify website to be accessed
 For Software:
 
 # Screenshots (Add at least 3)
-https://github.com/xbot-star/useless_project_glitch/edit/main/README.md
-https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot2.png
-https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot3.png
-https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot4.png
-https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot5.png
-https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot6.png
-https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot7.png
-https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot8.png
-https://github.com/xbot-star/useless_project_glitch/blob/main/Screenshot9.png
+![Screenshot 1](Screenshot1.png)
+*Landing page & hero view*
+
+![Screenshot 2](Screenshot2.png)
+*Object selection & upload interface*
+
+![Screenshot 3](Screenshot3.png)
+*Generated identity & personality card*
+
+![Screenshot 4](Screenshot4.png)
+*Personality DNA & stats*
+
+![Screenshot 5](Screenshot5.png)
+*Object LinkedIn profile*
+
+![Screenshot 6](Screenshot6.png)
+*Object LinkedIn feed & posts*
+
+![Screenshot 7](Screenshot7.png)
+*Object Matrimony matchmaking*
+
+![Screenshot 8](Screenshot8.png)
+*Porutham horoscope compatibility scanner*
+
+![Screenshot 9](Screenshot9.png)
+*Thing Court litigation & disputes*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -107,12 +124,12 @@ For Hardware:
 *Explain what the video demonstrates*
 
 # Additional Demos
-[Add any extra demo materials/links]
+- 🌐 **Live Website**: [https://jeevify.onrender.com](https://jeevify.onrender.com)  
+  *Step into the universe where your chargers date, your pens write resumes, and everyday objects finally have their day in court.*
 
 ## Team Contributions
-- ABHIJITH B]: [Specific contributions]
-- AKSHAYA K S: [Specific contributions]
-- 
+- ABHIJITH B: [Specific contributions]
+- AKSHAYA K S: [Specific contributions] 
 Made with ❤️ at TinkerHub Useless Projects 
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
