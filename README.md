@@ -89,18 +89,24 @@ For Software:
 *Thing Court litigation: Objects suing owners and peers over broken cables and missing caps.*
 
 # Diagrams
+![Workflow](screenshots/workflow.svg)
+*Architecture & Workflow: How everyday objects are ingested, analyzed by the Gemini AI Engine, and materialized into life modules (Cards, LinkedIn, Matrimony, Astrology, and Court).*
+
+<details>
+<summary><b>View Mermaid Flowchart Syntax</b></summary>
+
 ```mermaid
 flowchart TD
-    A[User Uploads / Selects Inanimate Object] --> B[Object Ingestion & Analysis]
-    B --> C{AI Personality Engine}
-    C -->|Gemini API / Rule Archetypes| D[Structured Jeevify Identity Profile]
-    D --> E[Collectible Identity Card]
-    D --> F[Object LinkedIn Profile & Feed]
-    D --> H[Object Matrimony & Porutham Matcher]
-    D --> I[Object Astrology & Horoscope]
-    D --> J[Thing Court Lawsuits & Trials]
+    A["User Uploads / Selects Object"] --> B["Object Ingestion & Analysis"]
+    B --> C{"AI Personality Engine"}
+    C -->|"Gemini API / Rule Archetypes"| D["Structured Jeevify Identity Profile"]
+    D --> E["Collectible Identity Card"]
+    D --> F["Object LinkedIn Profile & Feed"]
+    D --> G["Object Matrimony & Porutham Scanner"]
+    D --> H["Object Astrology & Horoscope"]
+    D --> I["Thing Court Lawsuits & Trials"]
 ```
-*Workflow & Architecture: How everyday objects are ingested and transformed by the AI engine into distinct life modules.*
+</details>
 
 For Hardware:
 

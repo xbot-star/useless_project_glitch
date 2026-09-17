@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0a0d14" />
+    </linearGradient>
+
+    <!-- Gold Accent Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="50%" stop-color="#f5e6a3" />
+      <stop offset="100%" stop-color="#b8860b" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f293d" />
+      <stop offset="100%" stop-color="#131b2e" />
+    </linearGradient>
+
+    <!-- AI Core Card Gradient -->
+    <linearGradient id="aiCoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1f47" />
+      <stop offset="100%" stop-color="#171226" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Arrow Marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d4af37" />
+    </marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1000" height="620" rx="16" fill="url(#bgGrad)" stroke="#b8860b" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Subtitle & Header -->
+  <text x="500" y="46" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="url(#goldGrad)" letter-spacing="2">
+    JEEVIFY — ARCHITECTURE &amp; WORKFLOW
+  </text>
+  <text x="500" y="70" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="500" fill="#94a3b8">
+    How ordinary inanimate objects are transformed into conscious social identities
+  </text>
+
+  <!-- STEP 1: USER INPUT -->
+  <g transform="translate(40, 110)" filter="url(#shadow)">
+    <rect width="260" height="110" rx="12" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.8" />
+    <circle cx="36" cy="36" r="16" fill="#1e3a8a" />
+    <text x="36" y="42" text-anchor="middle" font-size="16">📸</text>
+    <text x="64" y="34" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f8fafc">1. Inanimate Object Ingestion</text>
+    <text x="64" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#94a3b8">Upload photo / select preset</text>
+    <rect x="20" y="72" width="220" height="24" rx="6" fill="#0f172a" stroke="#334155" />
+    <text x="130" y="88" text-anchor="middle" font-family="monospace" font-size="11" fill="#38bdf8">Charger • Pen • Chair • Bottle</text>
+  </g>
+
+  <!-- CONNECTOR 1 -> 2 -->
+  <path d="M 300 165 L 368 165" fill="none" stroke="#d4af37" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 2: RECOGNITION & EXTRACTION -->
+  <g transform="translate(370, 110)" filter="url(#shadow)">
+    <rect width="260" height="110" rx="12" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.8" />
+    <circle cx="36" cy="36" r="16" fill="#4c1d95" />
+    <text x="36" y="42" text-anchor="middle" font-size="16">🔍</text>
+    <text x="64" y="34" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f8fafc">2. Context &amp; State Extraction</text>
+    <text x="64" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#94a3b8">Physical wear, context &amp; type</text>
+    <rect x="20" y="72" width="220" height="24" rx="6" fill="#0f172a" stroke="#334155" />
+    <text x="130" y="88" text-anchor="middle" font-family="monospace" font-size="11" fill="#c084fc">Damage level • Mood • Heritage</text>
+  </g>
+
+  <!-- CONNECTOR 2 -> 3 -->
+  <path d="M 630 165 L 698 165" fill="none" stroke="#d4af37" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- STEP 3: GEMINI AI CORE GENERATOR -->
+  <g transform="translate(700, 100)" filter="url(#shadow)">
+    <rect width="260" height="130" rx="12" fill="url(#aiCoreGrad)" stroke="#f59e0b" stroke-width="2" />
+    <circle cx="36" cy="38" r="16" fill="#78350f" />
+    <text x="36" y="44" text-anchor="middle" font-size="16">✨</text>
+    <text x="64" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#fbbf24">3. AI Persona Generator</text>
+    <text x="64" y="54" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#cbd5e1">Google Gemini 2.5 Flash</text>
+    <rect x="16" y="74" width="228" height="42" rx="6" fill="#140f24" stroke="#d97706" stroke-dasharray="3 3" />
+    <text x="130" y="90" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#fde68a">Structured JSON Persona Prompt</text>
+    <text x="130" y="106" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#94a3b8">+ Deterministic Rule-Based Fallback</text>
+  </g>
+
+  <!-- VERTICAL CONNECTOR 3 -> CORE IDENTITY -->
+  <path d="M 830 230 L 830 280 L 515 280" fill="none" stroke="#d4af37" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- CENTRAL REGISTRY / JVF IDENTITY -->
+  <g transform="translate(190, 255)" filter="url(#shadow)">
+    <rect width="320" height="52" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" />
+    <text x="24" y="32" font-size="18">🪪</text>
+    <text x="52" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#e0e7ff">Synthesized JVF Identity Profile</text>
+    <text x="52" y="42" font-family="monospace" font-size="10.5" fill="#a5b4fc">JVF-ID • Name • DNA • Stats • Relatives</text>
+  </g>
+
+  <!-- BRANCHING CONNECTORS FROM REGISTRY TO ECOSYSTEM MODULES -->
+  <path d="M 350 307 L 350 350" fill="none" stroke="#6366f1" stroke-width="1.5" />
+  <path d="M 90 350 L 910 350" fill="none" stroke="#6366f1" stroke-width="1.5" />
+  
+  <!-- DROPLINES TO 5 MODULES -->
+  <path d="M 90 350 L 90 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
+  <path d="M 295 350 L 295 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
+  <path d="M 500 350 L 500 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
+  <path d="M 705 350 L 705 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
+  <path d="M 910 350 L 910 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
+
+  <!-- MODULE 1: COLLECTIBLE IDENTITY -->
+  <g transform="translate(15, 385)" filter="url(#shadow)">
+    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" />
+    <rect x="0" y="0" width="150" height="34" rx="10" fill="#075985" />
+    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Collectible Card</text>
+    <text x="75" y="60" text-anchor="middle" font-size="22">💳</text>
+    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#bae6fd">Official JVF-ID</text>
+    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Human Name</text>
+    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Personality DNA</text>
+    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Life Stats &amp; Quirks</text>
+    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Share &amp; Export Card</text>
+  </g>
+
+  <!-- MODULE 2: OBJECT LINKEDIN -->
+  <g transform="translate(220, 385)" filter="url(#shadow)">
+    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#0a66c2" stroke-width="1.2" />
+    <rect x="0" y="0" width="150" height="34" rx="10" fill="#0a66c2" />
+    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Object LinkedIn</text>
+    <text x="75" y="60" text-anchor="middle" font-size="22">💼</text>
+    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#93c5fd">Workplace Life</text>
+    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Corporate Role</text>
+    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Career Timeline</text>
+    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Thought Posts</text>
+    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Coworker Network</text>
+  </g>
+
+  <!-- MODULE 3: OBJECT MATRIMONY -->
+  <g transform="translate(425, 385)" filter="url(#shadow)">
+    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#ec4899" stroke-width="1.2" />
+    <rect x="0" y="0" width="150" height="34" rx="10" fill="#9d174d" />
+    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Object Matrimony</text>
+    <text x="75" y="60" text-anchor="middle" font-size="22">💍</text>
+    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#fbcfe8">Soulmate Search</text>
+    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• 10-Porutham Match</text>
+    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Appliance Profiles</text>
+    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• In-Law Background</text>
+    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Proposal Rituals</text>
+  </g>
+
+  <!-- MODULE 4: ASTROLOGY & DESTINY -->
+  <g transform="translate(630, 385)" filter="url(#shadow)">
+    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#eab308" stroke-width="1.2" />
+    <rect x="0" y="0" width="150" height="34" rx="10" fill="#854d0e" />
+    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Astrology &amp; Astro</text>
+    <text x="75" y="60" text-anchor="middle" font-size="22">🔮</text>
+    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#fef08a">Cosmic Horoscopes</text>
+    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Zodiac Sign &amp; Element</text>
+    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Lucky Socket / Room</text>
+    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Daily Planetary Transit</text>
+    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Destiny Forecast</text>
+  </g>
+
+  <!-- MODULE 5: THING COURT & NEWS -->
+  <g transform="translate(835, 385)" filter="url(#shadow)">
+    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1.2" />
+    <rect x="0" y="0" width="150" height="34" rx="10" fill="#991b1b" />
+    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Thing Court &amp; News</text>
+    <text x="75" y="60" text-anchor="middle" font-size="22">⚖️</text>
+    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#fca5a5">Justice &amp; Drama</text>
+    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Domestic Lawsuits</text>
+    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Witness Testimonies</text>
+    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Jury Verdicts</text>
+    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Breaking Thing News</text>
+  </g>
+
+</svg>
