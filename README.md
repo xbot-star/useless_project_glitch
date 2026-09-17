@@ -102,7 +102,9 @@ flowchart TD
 
 ### Project Demo
 # Video
-[![Watch the Video Demo](https://unsplash.com)]([https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link](https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link))
+[![Watch the Video Demo](DEMO/Screenshot1.png)](https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link)
+*Click the image above to view the full video demonstration on Google Drive.*
+
 *Click the image above to view the full video demonstration on Google Drive.*
 
 
