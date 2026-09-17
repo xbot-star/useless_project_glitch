@@ -102,9 +102,11 @@ flowchart TD
 
 ### Project Demo
 # Video
-[🎬 Click Here to Watch the Demo Video](DEMO/DEMO%20VIDEO.mp4)
+[![Watch the Video Demo](https://unsplash.com)]([https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link](https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link))
+*Click the image above to view the full video demonstration on Google Drive.*
 
-<video src="DEMO/DEMO%20VIDEO.mp4" controls="controls" width="100%"></video>
+
+<video src="https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link" controls="controls" width="100%"></video>
 
 *Walkthrough video demonstrating object uploading, personality generation, LinkedIn profile browsing, Matrimony Porutham scanning, and Thing Court litigation.*
 
