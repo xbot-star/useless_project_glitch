@@ -1,185 +1,275 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 740" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f19" />
-      <stop offset="50%" stop-color="#111827" />
-      <stop offset="100%" stop-color="#0a0d14" />
+    <!-- Gold Linear Gradients -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8860b" />
+      <stop offset="35%" stop-color="#d4af37" />
+      <stop offset="70%" stop-color="#f5e6a3" />
+      <stop offset="100%" stop-color="#996515" />
     </linearGradient>
 
-    <!-- Gold Accent Gradient -->
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="goldBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#d4af37" />
       <stop offset="50%" stop-color="#f5e6a3" />
       <stop offset="100%" stop-color="#b8860b" />
     </linearGradient>
 
-    <!-- Card Background Gradient -->
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1f293d" />
-      <stop offset="100%" stop-color="#131b2e" />
+    <linearGradient id="coreAIGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fefaf0" />
     </linearGradient>
 
-    <!-- AI Core Card Gradient -->
-    <linearGradient id="aiCoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2d1f47" />
-      <stop offset="100%" stop-color="#171226" />
-    </linearGradient>
-
-    <!-- Drop Shadows -->
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
-      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    <!-- Warm Shadows -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#b8860b" flood-opacity="0.12" />
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.04" />
     </filter>
-    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <!-- Arrow Marker -->
-    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d4af37" />
+    <!-- Arrowhead Markers -->
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#b8860b" />
     </marker>
-    <marker id="arrowTeal" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#8c6512" />
     </marker>
+
+    <!-- Background Pattern -->
+    <pattern id="dotGrid" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#b8860b" fill-opacity="0.12" />
+    </pattern>
   </defs>
 
-  <!-- Canvas Background -->
-  <rect width="1000" height="620" rx="16" fill="url(#bgGrad)" stroke="#b8860b" stroke-width="1.5" stroke-opacity="0.4" />
+  <!-- Background Canvas matching website #fcfbf7 -->
+  <rect width="1100" height="740" rx="16" fill="#fcfbf7" stroke="#d4af37" stroke-width="1.8" stroke-opacity="0.5" />
+  <rect width="1100" height="740" rx="16" fill="url(#dotGrid)" />
 
-  <!-- Subtitle & Header -->
-  <text x="500" y="46" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="url(#goldGrad)" letter-spacing="2">
-    JEEVIFY — ARCHITECTURE &amp; WORKFLOW
+  <!-- Soft Ambient Radial Glow behind AI Core -->
+  <circle cx="550" cy="230" r="280" fill="#f5e6a3" fill-opacity="0.25" filter="url(#goldGlow)" />
+
+  <!-- ==================== HEADER SECTION ==================== -->
+  <!-- Pill Subtitle Badge -->
+  <g transform="translate(420, 24)">
+    <rect width="260" height="28" rx="14" fill="#f3efe6" stroke="#b8860b" stroke-width="1.2" stroke-opacity="0.6" />
+    <text x="130" y="18" text-anchor="middle" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="11" font-weight="800" fill="#8c6512" letter-spacing="1.5">
+      ✨ THE WORLD OF NON-LIVING THINGS ✨
+    </text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="550" y="80" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="900" fill="#0f0f0f" letter-spacing="0.5">
+    JEEVIFY
   </text>
-  <text x="500" y="70" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="500" fill="#94a3b8">
-    How ordinary inanimate objects are transformed into conscious social identities
+  <text x="550" y="104" text-anchor="middle" font-family="'Cinzel', 'Playfair Display', serif" font-size="13" font-weight="700" fill="url(#goldGradient)" letter-spacing="2.5">
+    SYSTEM ARCHITECTURE &amp; WORKFLOW ENGINE
+  </text>
+  <text x="550" y="123" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-style="italic" fill="#555555">
+    “You've spent years with them. Maybe it's time you finally met them.”
   </text>
 
-  <!-- STEP 1: USER INPUT -->
-  <g transform="translate(40, 110)" filter="url(#shadow)">
-    <rect width="260" height="110" rx="12" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.8" />
-    <circle cx="36" cy="36" r="16" fill="#1e3a8a" />
-    <text x="36" y="42" text-anchor="middle" font-size="16">📸</text>
-    <text x="64" y="34" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f8fafc">1. Inanimate Object Ingestion</text>
-    <text x="64" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#94a3b8">Upload photo / select preset</text>
-    <rect x="20" y="72" width="220" height="24" rx="6" fill="#0f172a" stroke="#334155" />
-    <text x="130" y="88" text-anchor="middle" font-family="monospace" font-size="11" fill="#38bdf8">Charger • Pen • Chair • Bottle</text>
+  <!-- ==================== ROW 1: INPUT -> AI ENGINE ==================== -->
+
+  <!-- STEP 1: OBJECT INGESTION -->
+  <g transform="translate(60, 145)" filter="url(#cardShadow)">
+    <rect width="300" height="135" rx="14" fill="#ffffff" stroke="#b8860b" stroke-width="1.4" stroke-opacity="0.4" />
+    <!-- Top gold accent bar -->
+    <path d="M 0 14 Q 0 0 14 0 L 286 0 Q 300 0 300 14 L 300 6 L 0 6 Z" fill="url(#goldBarGrad)" />
+    
+    <circle cx="36" cy="38" r="16" fill="#f3efe6" stroke="#b8860b" stroke-width="1" />
+    <text x="36" y="44" text-anchor="middle" font-size="16">📸</text>
+    
+    <text x="62" y="35" font-family="'Playfair Display', serif" font-size="16" font-weight="700" fill="#1a1a1a">1. Inanimate Object Ingestion</text>
+    <text x="62" y="51" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#78716c">Photo Upload or Quick Preset Selection</text>
+
+    <!-- Quick item chips -->
+    <g transform="translate(18, 70)">
+      <rect x="0" y="0" width="76" height="24" rx="12" fill="#faf8f2" stroke="#d4af37" stroke-width="0.8" />
+      <text x="38" y="16" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#8c6512">🔌 Charger</text>
+
+      <rect x="84" y="0" width="70" height="24" rx="12" fill="#faf8f2" stroke="#d4af37" stroke-width="0.8" />
+      <text x="119" y="16" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#8c6512">📎 Stapler</text>
+
+      <rect x="162" y="0" width="58" height="24" rx="12" fill="#faf8f2" stroke="#d4af37" stroke-width="0.8" />
+      <text x="191" y="16" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#8c6512">👟 Shoe</text>
+
+      <rect x="228" y="0" width="46" height="24" rx="12" fill="#faf8f2" stroke="#d4af37" stroke-width="0.8" />
+      <text x="251" y="16" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="600" fill="#8c6512">☕ Mug</text>
+    </g>
+
+    <text x="150" y="118" text-anchor="middle" font-family="monospace" font-size="10.5" font-weight="600" fill="#a16207">
+      Physical condition • Wear &amp; tear • Material context
+    </text>
   </g>
 
   <!-- CONNECTOR 1 -> 2 -->
-  <path d="M 300 165 L 368 165" fill="none" stroke="#d4af37" stroke-width="2" marker-end="url(#arrow)" />
+  <path d="M 360 212 L 420 212" fill="none" stroke="#b8860b" stroke-width="2.2" marker-end="url(#arrowGold)" />
 
-  <!-- STEP 2: RECOGNITION & EXTRACTION -->
-  <g transform="translate(370, 110)" filter="url(#shadow)">
-    <rect width="260" height="110" rx="12" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="1.5" stroke-opacity="0.8" />
-    <circle cx="36" cy="36" r="16" fill="#4c1d95" />
-    <text x="36" y="42" text-anchor="middle" font-size="16">🔍</text>
-    <text x="64" y="34" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#f8fafc">2. Context &amp; State Extraction</text>
-    <text x="64" y="52" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#94a3b8">Physical wear, context &amp; type</text>
-    <rect x="20" y="72" width="220" height="24" rx="6" fill="#0f172a" stroke="#334155" />
-    <text x="130" y="88" text-anchor="middle" font-family="monospace" font-size="11" fill="#c084fc">Damage level • Mood • Heritage</text>
+  <!-- STEP 2: AI PERSONA & INTELLIGENCE ENGINE -->
+  <g transform="translate(425, 135)" filter="url(#cardShadow)">
+    <rect width="615" height="155" rx="16" fill="url(#coreAIGrad)" stroke="#b8860b" stroke-width="2" />
+    <path d="M 0 16 Q 0 0 16 0 L 599 0 Q 615 0 615 16 L 615 6 L 0 6 Z" fill="url(#goldBarGrad)" />
+
+    <circle cx="40" cy="38" r="18" fill="#1a1a1a" />
+    <text x="40" y="44" text-anchor="middle" font-size="16">⚡</text>
+
+    <text x="68" y="34" font-family="'Playfair Display', serif" font-size="18" font-weight="800" fill="#1a1a1a">2. AI Persona &amp; Consciousness Engine</text>
+    <text x="68" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="600" fill="#8c6512">
+      Google Gemini GenAI SDK (@google/genai) + Deterministic Archetype Synthesizer
+    </text>
+
+    <!-- Sub Processors Inner Grid -->
+    <g transform="translate(20, 70)">
+      <!-- Box 1 -->
+      <rect x="0" y="0" width="180" height="68" rx="8" fill="#ffffff" stroke="#e5e0d3" stroke-width="1" />
+      <text x="90" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Psychology &amp; Persona</text>
+      <text x="90" y="40" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#666666">Human name, career,</text>
+      <text x="90" y="54" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#666666">social status &amp; origin</text>
+
+      <!-- Box 2 -->
+      <rect x="195" y="0" width="180" height="68" rx="8" fill="#ffffff" stroke="#e5e0d3" stroke-width="1" />
+      <text x="285" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">10-Porutham Matcher</text>
+      <text x="285" y="40" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#666666">Vedic astrology, zodiac,</text>
+      <text x="285" y="54" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#666666">element &amp; compatibility</text>
+
+      <!-- Box 3 -->
+      <rect x="390" y="0" width="185" height="68" rx="8" fill="#ffffff" stroke="#e5e0d3" stroke-width="1" />
+      <text x="482" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1a1a1a">Domestic Litigation Logic</text>
+      <text x="482" y="40" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#666666">Thing Court prosecutor,</text>
+      <text x="482" y="54" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" fill="#666666">evidence &amp; jury verdict</text>
+    </g>
   </g>
 
-  <!-- CONNECTOR 2 -> 3 -->
-  <path d="M 630 165 L 698 165" fill="none" stroke="#d4af37" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- ==================== CENTRAL HUB: SYNTHESIZED IDENTITY ==================== -->
+  <!-- Drop arrow from AI Core to Central Identity Hub -->
+  <path d="M 732 290 L 732 328 L 550 328 L 550 345" fill="none" stroke="#b8860b" stroke-width="2.2" marker-end="url(#arrowGold)" />
 
-  <!-- STEP 3: GEMINI AI CORE GENERATOR -->
-  <g transform="translate(700, 100)" filter="url(#shadow)">
-    <rect width="260" height="130" rx="12" fill="url(#aiCoreGrad)" stroke="#f59e0b" stroke-width="2" />
-    <circle cx="36" cy="38" r="16" fill="#78350f" />
-    <text x="36" y="44" text-anchor="middle" font-size="16">✨</text>
-    <text x="64" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#fbbf24">3. AI Persona Generator</text>
-    <text x="64" y="54" font-family="'Segoe UI', Roboto, sans-serif" font-size="11.5" fill="#cbd5e1">Google Gemini 2.5 Flash</text>
-    <rect x="16" y="74" width="228" height="42" rx="6" fill="#140f24" stroke="#d97706" stroke-dasharray="3 3" />
-    <text x="130" y="90" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#fde68a">Structured JSON Persona Prompt</text>
-    <text x="130" y="106" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#94a3b8">+ Deterministic Rule-Based Fallback</text>
+  <g transform="translate(300, 348)" filter="url(#cardShadow)">
+    <rect width="500" height="58" rx="29" fill="#1a1a1a" stroke="#d4af37" stroke-width="1.8" />
+    <circle cx="32" cy="29" r="16" fill="url(#goldGradient)" />
+    <text x="32" y="35" text-anchor="middle" font-size="15">🪪</text>
+    <text x="64" y="27" font-family="'Playfair Display', serif" font-size="15" font-weight="700" fill="#f5e6a3">Structured Jeevify Identity Record</text>
+    <text x="64" y="45" font-family="monospace" font-size="11" font-weight="600" fill="#ffffff">
+      ID: JVF-XXXX-TYPE • DNA Dimensions • Stats • Family Tree • Quirks
+    </text>
   </g>
 
-  <!-- VERTICAL CONNECTOR 3 -> CORE IDENTITY -->
-  <path d="M 830 230 L 830 280 L 515 280" fill="none" stroke="#d4af37" stroke-width="2" marker-end="url(#arrow)" />
+  <!-- ==================== DISTRIBUTION BRANCHES ==================== -->
+  <!-- Main Horizontal Bus -->
+  <path d="M 550 406 L 550 435" fill="none" stroke="#b8860b" stroke-width="2" />
+  <path d="M 140 435 L 960 435" fill="none" stroke="#b8860b" stroke-width="2" />
 
-  <!-- CENTRAL REGISTRY / JVF IDENTITY -->
-  <g transform="translate(190, 255)" filter="url(#shadow)">
-    <rect width="320" height="52" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5" />
-    <text x="24" y="32" font-size="18">🪪</text>
-    <text x="52" y="26" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#e0e7ff">Synthesized JVF Identity Profile</text>
-    <text x="52" y="42" font-family="monospace" font-size="10.5" fill="#a5b4fc">JVF-ID • Name • DNA • Stats • Relatives</text>
+  <!-- Vertical Droplines into 5 Cards -->
+  <path d="M 140 435 L 140 458" fill="none" stroke="#b8860b" stroke-width="2" marker-end="url(#arrowGold)" />
+  <path d="M 345 435 L 345 458" fill="none" stroke="#b8860b" stroke-width="2" marker-end="url(#arrowGold)" />
+  <path d="M 550 435 L 550 458" fill="none" stroke="#b8860b" stroke-width="2" marker-end="url(#arrowGold)" />
+  <path d="M 755 435 L 755 458" fill="none" stroke="#b8860b" stroke-width="2" marker-end="url(#arrowGold)" />
+  <path d="M 960 435 L 960 458" fill="none" stroke="#b8860b" stroke-width="2" marker-end="url(#arrowGold)" />
+
+  <!-- ==================== 5 MODULE CARDS (JEEVIFY WORLDS) ==================== -->
+
+  <!-- 1. COLLECTIBLE CARD -->
+  <g transform="translate(45, 465)" filter="url(#cardShadow)">
+    <rect width="190" height="235" rx="14" fill="#ffffff" stroke="#b8860b" stroke-width="1.2" stroke-opacity="0.5" />
+    <path d="M 0 14 Q 0 0 14 0 L 176 0 Q 190 0 190 14 L 190 6 L 0 6 Z" fill="url(#goldBarGrad)" />
+    
+    <circle cx="95" cy="38" r="18" fill="#faf7ee" stroke="#d4af37" stroke-width="1" />
+    <text x="95" y="44" text-anchor="middle" font-size="18">🪪</text>
+    
+    <text x="95" y="74" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="800" fill="#1a1a1a">Collectible Card</text>
+    <text x="95" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#8c6512">IDENTITY REVEAL</text>
+    <line x1="25" y1="102" x2="165" y2="102" stroke="#e7e2d4" stroke-width="1" />
+
+    <text x="95" y="122" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Official JVF ID Code</text>
+    <text x="95" y="142" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Personality DNA (5D)</text>
+    <text x="95" y="162" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Life Timeline &amp; Quirks</text>
+    <text x="95" y="182" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Evolution Level Tracker</text>
+    <text x="95" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Shareable Export Card</text>
   </g>
 
-  <!-- BRANCHING CONNECTORS FROM REGISTRY TO ECOSYSTEM MODULES -->
-  <path d="M 350 307 L 350 350" fill="none" stroke="#6366f1" stroke-width="1.5" />
-  <path d="M 90 350 L 910 350" fill="none" stroke="#6366f1" stroke-width="1.5" />
-  
-  <!-- DROPLINES TO 5 MODULES -->
-  <path d="M 90 350 L 90 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
-  <path d="M 295 350 L 295 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
-  <path d="M 500 350 L 500 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
-  <path d="M 705 350 L 705 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
-  <path d="M 910 350 L 910 380" fill="none" stroke="#6366f1" stroke-width="1.5" marker-end="url(#arrowTeal)" />
+  <!-- 2. OBJECT LINKEDIN -->
+  <g transform="translate(250, 465)" filter="url(#cardShadow)">
+    <rect width="190" height="235" rx="14" fill="#ffffff" stroke="#b8860b" stroke-width="1.2" stroke-opacity="0.5" />
+    <path d="M 0 14 Q 0 0 14 0 L 176 0 Q 190 0 190 14 L 190 6 L 0 6 Z" fill="url(#goldBarGrad)" />
+    
+    <circle cx="95" cy="38" r="18" fill="#f0f7ff" stroke="#0a66c2" stroke-width="1" />
+    <text x="95" y="44" text-anchor="middle" font-size="18">💼</text>
+    
+    <text x="95" y="74" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="800" fill="#1a1a1a">Object LinkedIn</text>
+    <text x="95" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#0a66c2">CAREER &amp; NETWORKING</text>
+    <line x1="25" y1="102" x2="165" y2="102" stroke="#e7e2d4" stroke-width="1" />
 
-  <!-- MODULE 1: COLLECTIBLE IDENTITY -->
-  <g transform="translate(15, 385)" filter="url(#shadow)">
-    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" />
-    <rect x="0" y="0" width="150" height="34" rx="10" fill="#075985" />
-    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Collectible Card</text>
-    <text x="75" y="60" text-anchor="middle" font-size="22">💳</text>
-    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#bae6fd">Official JVF-ID</text>
-    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Human Name</text>
-    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Personality DNA</text>
-    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Life Stats &amp; Quirks</text>
-    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Share &amp; Export Card</text>
+    <text x="95" y="122" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• "Drawer Resident" Role</text>
+    <text x="95" y="142" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Years of Inaction Exp.</text>
+    <text x="95" y="162" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Thought-Leadership Posts</text>
+    <text x="95" y="182" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Inanimate Coworkers</text>
+    <text x="95" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Downloadable Resume</text>
   </g>
 
-  <!-- MODULE 2: OBJECT LINKEDIN -->
-  <g transform="translate(220, 385)" filter="url(#shadow)">
-    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#0a66c2" stroke-width="1.2" />
-    <rect x="0" y="0" width="150" height="34" rx="10" fill="#0a66c2" />
-    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Object LinkedIn</text>
-    <text x="75" y="60" text-anchor="middle" font-size="22">💼</text>
-    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#93c5fd">Workplace Life</text>
-    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Corporate Role</text>
-    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Career Timeline</text>
-    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Thought Posts</text>
-    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Coworker Network</text>
+  <!-- 3. OBJECT MATRIMONY -->
+  <g transform="translate(455, 465)" filter="url(#cardShadow)">
+    <rect width="190" height="235" rx="14" fill="#ffffff" stroke="#b8860b" stroke-width="1.2" stroke-opacity="0.5" />
+    <path d="M 0 14 Q 0 0 14 0 L 176 0 Q 190 0 190 14 L 190 6 L 0 6 Z" fill="url(#goldBarGrad)" />
+    
+    <circle cx="95" cy="38" r="18" fill="#fdf2f4" stroke="#e11d48" stroke-width="1" />
+    <text x="95" y="44" text-anchor="middle" font-size="18">💍</text>
+    
+    <text x="95" y="74" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="800" fill="#1a1a1a">Object Matrimony</text>
+    <text x="95" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#be123c">VEDIC PORUTHAM</text>
+    <line x1="25" y1="102" x2="165" y2="102" stroke="#e7e2d4" stroke-width="1" />
+
+    <text x="95" y="122" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• 10-Porutham Scanner</text>
+    <text x="95" y="142" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Compatible Match Feed</text>
+    <text x="95" y="162" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Family Background Drama</text>
+    <text x="95" y="182" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Proposal &amp; Marriage Card</text>
+    <text x="95" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Confetti Celebration</text>
   </g>
 
-  <!-- MODULE 3: OBJECT MATRIMONY -->
-  <g transform="translate(425, 385)" filter="url(#shadow)">
-    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#ec4899" stroke-width="1.2" />
-    <rect x="0" y="0" width="150" height="34" rx="10" fill="#9d174d" />
-    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Object Matrimony</text>
-    <text x="75" y="60" text-anchor="middle" font-size="22">💍</text>
-    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#fbcfe8">Soulmate Search</text>
-    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• 10-Porutham Match</text>
-    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Appliance Profiles</text>
-    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• In-Law Background</text>
-    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Proposal Rituals</text>
+  <!-- 4. ASTROLOGY & DESTINY -->
+  <g transform="translate(660, 465)" filter="url(#cardShadow)">
+    <rect width="190" height="235" rx="14" fill="#ffffff" stroke="#b8860b" stroke-width="1.2" stroke-opacity="0.5" />
+    <path d="M 0 14 Q 0 0 14 0 L 176 0 Q 190 0 190 14 L 190 6 L 0 6 Z" fill="url(#goldBarGrad)" />
+    
+    <circle cx="95" cy="38" r="18" fill="#fbf8ec" stroke="#ca8a04" stroke-width="1" />
+    <text x="95" y="44" text-anchor="middle" font-size="18">🔮</text>
+    
+    <text x="95" y="74" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="800" fill="#1a1a1a">Astrology &amp; Astro</text>
+    <text x="95" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#a16207">COSMIC HOROSCOPE</text>
+    <line x1="25" y1="102" x2="165" y2="102" stroke="#e7e2d4" stroke-width="1" />
+
+    <text x="95" y="122" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Zodiac Sign &amp; Element</text>
+    <text x="95" y="142" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Lucky Power Socket/Room</text>
+    <text x="95" y="162" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Daily Planetary Transit</text>
+    <text x="95" y="182" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Cosmic Weakness</text>
+    <text x="95" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• 10-Year Destiny Forecast</text>
   </g>
 
-  <!-- MODULE 4: ASTROLOGY & DESTINY -->
-  <g transform="translate(630, 385)" filter="url(#shadow)">
-    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#eab308" stroke-width="1.2" />
-    <rect x="0" y="0" width="150" height="34" rx="10" fill="#854d0e" />
-    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Astrology &amp; Astro</text>
-    <text x="75" y="60" text-anchor="middle" font-size="22">🔮</text>
-    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#fef08a">Cosmic Horoscopes</text>
-    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Zodiac Sign &amp; Element</text>
-    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Lucky Socket / Room</text>
-    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Daily Planetary Transit</text>
-    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Destiny Forecast</text>
+  <!-- 5. THING COURT & NEWS -->
+  <g transform="translate(865, 465)" filter="url(#cardShadow)">
+    <rect width="190" height="235" rx="14" fill="#ffffff" stroke="#b8860b" stroke-width="1.2" stroke-opacity="0.5" />
+    <path d="M 0 14 Q 0 0 14 0 L 176 0 Q 190 0 190 14 L 190 6 L 0 6 Z" fill="url(#goldBarGrad)" />
+    
+    <circle cx="95" cy="38" r="18" fill="#fef2f2" stroke="#dc2626" stroke-width="1" />
+    <text x="95" y="44" text-anchor="middle" font-size="18">⚖️</text>
+    
+    <text x="95" y="74" text-anchor="middle" font-family="'Playfair Display', serif" font-size="14" font-weight="800" fill="#1a1a1a">Thing Court &amp; News</text>
+    <text x="95" y="90" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#b91c1c">JUSTICE &amp; DAILY GOSSIP</text>
+    <line x1="25" y1="102" x2="165" y2="102" stroke="#e7e2d4" stroke-width="1" />
+
+    <text x="95" y="122" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Lawsuits Against Owners</text>
+    <text x="95" y="142" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Wire Abuse &amp; Missing Caps</text>
+    <text x="95" y="162" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Witness Testimonies</text>
+    <text x="95" y="182" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Bench Verdicts &amp; Penalties</text>
+    <text x="95" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" fill="#444">• Breaking Thing News</text>
   </g>
 
-  <!-- MODULE 5: THING COURT & NEWS -->
-  <g transform="translate(835, 385)" filter="url(#shadow)">
-    <rect width="150" height="190" rx="10" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1.2" />
-    <rect x="0" y="0" width="150" height="34" rx="10" fill="#991b1b" />
-    <text x="75" y="22" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Thing Court &amp; News</text>
-    <text x="75" y="60" text-anchor="middle" font-size="22">⚖️</text>
-    <text x="75" y="85" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#fca5a5">Justice &amp; Drama</text>
-    <text x="75" y="105" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Domestic Lawsuits</text>
-    <text x="75" y="123" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Witness Testimonies</text>
-    <text x="75" y="141" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Jury Verdicts</text>
-    <text x="75" y="159" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">• Breaking Thing News</text>
+  <!-- Bottom Brand Signature -->
+  <g transform="translate(485, 712)">
+    <text x="65" y="14" text-anchor="middle" font-family="'Cinzel', serif" font-size="11" font-weight="700" fill="#8c6512" letter-spacing="2">
+      GLITCH • TINKERHUB USELESS PROJECTS
+    </text>
   </g>
-
 </svg>
