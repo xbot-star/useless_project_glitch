@@ -3,11 +3,11 @@
 # JEEVIFY 🎯
 
 ## Basic Details
-### Team Name: glitch
+### Team Name: GLITCH
 
 ### Team Members
 - Team Lead: Abhijith B - NSS College of Engineering, Palakkad
-- Member 2: Akshaya K S - NSS College of Engineering, Palakkad
+- Member : Akshaya K S - NSS College of Engineering, Palakkad
 
 ### Project Description
 Jeevify gives everyday inanimate objects around us a life of their own! Upload or select any household object and watch it get an official human identity, personality DNA, professional LinkedIn profile, Vedic Matrimony matchmaking, astrological readings, and even a day in Thing Court to litigate domestic grievances.
@@ -25,19 +25,12 @@ We solve this completely unnecessary problem with AI. Upload any object, and JEE
 
 ## Technical Details
 ### Technologies/Components Used
-For Software:
 - **Languages used**: TypeScript, JavaScript, HTML5, CSS3
 - **Frameworks used**: React 19, Vite
 - **Libraries used**: Tailwind CSS v4, Framer Motion, Lucide React, Google GenAI SDK (`@google/genai`), Canvas Confetti
 - **Tools used**: Antigravity IDE, Git, GitHub, Render, Oxlint
 
-For Hardware:
-- **Main components**: NA (Software-only project)
-- **Specifications**: NA
-- **Tools required**: NA
-
 ### Implementation
-For Software:
 # Installation
 ```bash
 git clone https://github.com/xbot-star/useless_project_glitch.git
@@ -58,38 +51,37 @@ npm run preview
 ```
 
 ### Project Documentation
-For Software:
 
-# Screenshots (Add at least 3)
-![Screenshot 1](screenshots/Screenshot1.png)
+# Screenshots
+![Screenshot 1](DEMO/Screenshot1.png)
 *Landing page with interactive floating objects and instant personification portal.*
 
-![Screenshot 2](screenshots/Screenshot2.png)
+![Screenshot 2](DEMO/Screenshot2.png)
 *Object selection and AI upload modal interface.*
 
-![Screenshot 3](screenshots/Screenshot3.png)
+![Screenshot 3](DEMO/Screenshot3.png)
 *Collectible JVF Identity Card featuring name, code, occupation, and personality traits.*
 
-![Screenshot 4](screenshots/Screenshot4.png)
+![Screenshot 4](DEMO/Screenshot4.png)
 *Personality DNA breakdown and day-in-the-life timeline.*
 
-![Screenshot 5](screenshots/Screenshot5.png)
+![Screenshot 5](DEMO/Screenshot5.png)
 *Object LinkedIn profile with career milestones and corporate experience.*
 
-![Screenshot 6](screenshots/Screenshot6.png)
+![Screenshot 6](DEMO/Screenshot6.png)
 *Object LinkedIn feed with corporate thought-leadership posts.*
 
-![Screenshot 7](screenshots/Screenshot7.png)
+![Screenshot 7](DEMO/Screenshot7.png)
 *Object Matrimony matchmaking feed finding compatible non-living soulmates.*
 
-![Screenshot 8](screenshots/Screenshot8.png)
+![Screenshot 8](DEMO/Screenshot8.png)
 *10-Porutham Vedic horoscope compatibility scanner for appliance couples.*
 
-![Screenshot 9](screenshots/Screenshot9.png)
+![Screenshot 9](DEMO/Screenshot9.png)
 *Thing Court litigation: Objects suing owners and peers over broken cables and missing caps.*
 
 # Diagrams
-![Workflow](screenshots/workflow.svg)
+![Workflow](DEMO/workflow.svg)
 *Architecture & Workflow: How everyday objects are ingested, analyzed by the Gemini AI Engine, and materialized into life modules (Cards, LinkedIn, Matrimony, Astrology, and Court).*
 
 <details>
@@ -108,29 +100,13 @@ flowchart TD
 ```
 </details>
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*NA (Software-only project - no hardware circuit required)*
-
-![Schematic](Add your schematic diagram here)
-*NA (Software-only project - no schematic required)*
-
-# Build Photos
-![Components](Add photo of your components here)
-*NA (Software-only project - no physical components)*
-
-![Build](Add photos of build process here)
-*NA (Software-only project - no physical build steps)*
-
-![Final](Add photo of final product here)
-*NA (Software-only project - digital web application)*
-
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Video demonstration of object uploading, personality generation, LinkedIn profile browsing, and Matrimony Porutham scanning.*
+[🎬 Click Here to Watch the Demo Video](DEMO/DEMO%20VIDEO.mp4)
+
+<video src="DEMO/DEMO%20VIDEO.mp4" controls="controls" width="100%"></video>
+
+*Walkthrough video demonstrating object uploading, personality generation, LinkedIn profile browsing, Matrimony Porutham scanning, and Thing Court litigation.*
 
 # Additional Demos
 - 🌐 **Live Website**: [https://jeevify.onrender.com](https://jeevify.onrender.com)  
