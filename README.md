@@ -102,7 +102,7 @@ flowchart TD
 
 ### Project Demo
 # Video
-[![](DEMO/<img width="1024" height="625" alt="image" src="https://github.com/user-attachments/assets/6b722baf-dcdd-4613-b0a4-6d7cd0c844f4" />
+[![Watch the video](<img width="1024" height="625" alt="image" src="https://github.com/user-attachments/assets/6b722baf-dcdd-4613-b0a4-6d7cd0c844f4" />
 )](https://drive.google.com/file/d/19dTJwhvMHnmx0L2GWa8ZVl-oA-2HWF9U/view?usp=drive_link)
 *Click the image above to view the full video demonstration on Google Drive.*
 
